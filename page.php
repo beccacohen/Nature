@@ -10,7 +10,7 @@
               <?php the_post_thumbnail(); ?>
           </div><!--featured-image-->
           <div class="text-container">
-            <h2><?php the_title();?></a></h2>
+            <h2 class="headding"><?php the_title();?></a></h2>
             <p class="body-content"><?php the_content();?></p>
           </div><!--text-container-->
         </div><!--single-post-->

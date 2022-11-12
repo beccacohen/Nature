@@ -45,13 +45,16 @@ h3 {
   font-size: 2rem;
 }
 
-p, ul, li, a, label {
-  font-family: 'Nanum Gothic', sans-serif;
+p, ul, li, a, label, span {
   font-size: 1.25rem;
   color: #234058;
+  text-decoration: none;
+  list-style: none;
 }
 
-
+p, ul, li, label, span {
+font-family: 'Nanum Gothic', sans-serif;
+}
 
 /*============================
 
@@ -72,20 +75,30 @@ nav.custom-menu-class li {
   padding: 1rem;
 }
 
-nav.custom-menu-class a {
+nav.custom-menu-class a,
+.wp-block-navigation ul li {
+  font-family: 'Salsa', cursive;
   text-decoration: none;
   color: white;
-  padding: 1rem;
   box-shadow: inset 0 0 0 0 #8fc1e3;
   margin: 0 -.25rem;
   padding: .7rem;
   transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
 }
-nav.custom-menu-class a:hover {
+nav.custom-menu-class a:hover,
+.wp-block-navigation ul li:hover {
 	color:white;
   box-shadow: inset 15rem 0 0 0 #5085a5;
 }
 
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content span,
+.wp-block-navigation .wp-block-navigation-item__label span:hover {
+  color: white;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+  background-color: #687864;
+}
 .logo-container {
   padding: 1rem;
 }
@@ -104,6 +117,37 @@ nav.custom-menu-class a:hover {
   color:white;
   box-shadow: inset 20rem 0 0 0 #5085a5;
 }
+
+/*============================
+
+index Styling
+
+============================*/
+.individual-post {
+display: inline-block;
+}
+
+.title-link {
+text-decoration: none;
+font-size: 1.7rem;
+}
+
+.title-link a,
+.wp-block-post-title a {
+  text-align: left;
+  font-family: 'Salsa', cursive;
+}
+.title-link:hover,
+.wp-block-post-title a:hover {
+  text-decoration: none;
+  color:#687864;
+}
+
+.excerpt {
+width: 50%;
+font-size: 1rem;
+}
+
 /*============================
 
 Page Styling
@@ -125,15 +169,6 @@ background-color: #dce4db;
 .headding {
   display: none;
 }
-/*============================
-
-  Featured Image Styling
-
-==============================*/
-.featured-image img{
-  width: 100%;
-  height: 100%;
-}
 
 /*============================
 
@@ -144,7 +179,8 @@ background-color: #dce4db;
 .wp-block-button,
 .wp-block-button__link,
 .wp-block-button__link a,
-button.wpforms-submit {
+button.wpforms-submit,
+.wp-block-search__button.wp-element-button {
   color: white;
   background-color: #434345;
   box-shadow: inset 0 0 0 0 #8fc1e3;
@@ -155,17 +191,48 @@ button.wpforms-submit {
 .wp-block-button:hover,
 .wp-block-button__link:hover,
 .wp-block-button__link a:hover,
-button.wpforms-submit:hover {
+button.wpforms-submit:hover,
+.post-navigation-link-previous.wp-block-post-navigation-link a:hover,
+.post-navigation-link-next.wp-block-post-navigation-link a:hover,
+.wp-block-search__button.wp-element-button:hover {
   color:white;
   box-shadow: inset 20rem 0 0 0 #5085a5;
 }
 
 /*============================
 
-  Sidebar Styling
+  Single Styling
 
 ==============================*/
+.img-post-single {
+  text-align: center;
+}
 
+/*============================
+
+  Post nav Styling
+
+==============================*/
+.post-navigation-link-previous.wp-block-post-navigation-link a,
+.post-navigation-link-next.wp-block-post-navigation-link a {
+  color: white;
+  background-color: #687864;
+  box-shadow: inset 0 0 0 0 #8fc1e3;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
+  text-decoration: none;
+  padding: .7rem;
+}
+
+/*============================
+
+  Archive Styling
+
+==============================*/
+#crumbs a:hover {
+  color:white;
+  box-shadow: inset 20rem 0 0 0 #5085a5;
+}
 /*============================
 
   Footer Styling
@@ -211,4 +278,14 @@ transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
 .wp-block-pages-list__item__link:hover{
   color:white;
   box-shadow: inset 20rem 0 0 0 #5085a5;
+}
+
+/*============================
+
+  WP Styling
+
+==============================*/
+.wp-block-avatar {
+box-sizing: border-box;
+padding: .5rem 0rem;
 }

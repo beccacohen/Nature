@@ -1,5 +1,6 @@
 <?php get_header(); ?>
   <div class="container">
+    <?php Breadcrumb(); ?>
     <div class="row">
       <main class="col-md-9">
         <section class="archive-container">
@@ -30,7 +31,7 @@
                   <?php post_data(); ?>
 
                   <?php the_post_thumbnail('medium'); ?>
-                  
+
                   <?php the_excerpt(); ?>
                 </article>
                 <?php

@@ -1,5 +1,5 @@
 /*
-Theme name Photo
+Theme name Nature
 Theme URI:
 Author: Rebecca Cohen
 Author URI: https://becreativedevelopment.com
@@ -11,6 +11,204 @@ Text Domain: Photo
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
-
-
 */
+
+/*============================
+
+Universal Styling
+
+============================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Salsa', cursive;
+  text-align: center;
+  color: #234058;
+}
+
+h1 {
+  font-size: 2.7rem;
+  padding-top: .5rem;
+}
+
+h2,
+h3 {
+  font-size: 2rem;
+}
+
+p, ul, li, a, label {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.25rem;
+  color: #234058;
+}
+
+
+
+/*============================
+
+Nav Styling
+
+============================*/
+
+header {
+	width: 100%;
+	height: 3%;
+	z-index: 9999;
+  background-color: #687864;
+}
+
+nav.custom-menu-class li {
+  display: block;
+  float: right;
+  padding: 1rem;
+}
+
+nav.custom-menu-class a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  box-shadow: inset 0 0 0 0 #8fc1e3;
+  margin: 0 -.25rem;
+  padding: .7rem;
+  transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
+}
+nav.custom-menu-class a:hover {
+	color:white;
+  box-shadow: inset 15rem 0 0 0 #5085a5;
+}
+
+.logo-container {
+  padding: 1rem;
+}
+
+.logo-container a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  float: left;
+  padding: .7rem;
+  box-shadow: inset 0 0 0 0 #8fc1e3;
+  transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+.logo-container a:hover {
+  color:white;
+  box-shadow: inset 20rem 0 0 0 #5085a5;
+}
+/*============================
+
+Page Styling
+
+============================*/
+.wp-block-latest-posts__post-excerpt {
+  width: 50%;
+}
+
+.wp-block-latest-posts__featured-image {
+
+}
+
+div.wp-block-group__inner-container {
+text-align: center;
+background-color: #dce4db;
+}
+
+.headding {
+  display: none;
+}
+/*============================
+
+  Featured Image Styling
+
+==============================*/
+.featured-image img{
+  width: 100%;
+  height: 100%;
+}
+
+/*============================
+
+  Contact Styling
+
+==============================*/
+
+.wp-block-button,
+.wp-block-button__link,
+.wp-block-button__link a,
+button.wpforms-submit {
+  color: white;
+  background-color: #434345;
+  box-shadow: inset 0 0 0 0 #8fc1e3;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+.wp-block-button:hover,
+.wp-block-button__link:hover,
+.wp-block-button__link a:hover,
+button.wpforms-submit:hover {
+  color:white;
+  box-shadow: inset 20rem 0 0 0 #5085a5;
+}
+
+/*============================
+
+  Sidebar Styling
+
+==============================*/
+
+/*============================
+
+  Footer Styling
+
+==============================*/
+footer{
+  padding-top: 2%;
+  background-color: #687864;
+}
+ul {
+  padding: 0;
+}
+.text-center,
+.top-footer-widget-container p,
+.bottom-footer-widget-container p,
+.bottom-footer-widget-container a,
+.bottom-footer-widget-container h4,
+.bottom-footer-widget-container li {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.wp-block-social-links.is-style-logos-only .wp-social-link svg {
+  color: white;
+  width: 3.25em;
+  height: 2.25em;
+}
+
+#text,
+.text-center a {
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.wp-block-pages-list__item__link{
+box-shadow: inset 0 0 0 0 #8fc1e3;
+margin: 0 -.25rem;
+transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+.wp-block-pages-list__item__link:hover{
+  color:white;
+  box-shadow: inset 20rem 0 0 0 #5085a5;
+}

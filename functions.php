@@ -22,14 +22,15 @@ add_action('wp_enqueue_scripts', 'custom_theme_scripts');
 add_theme_support('post-thumbnails');
 
 /*===================================
-  Adding menus to our theme
+  Adding menus to theme
 ====================================*/
 function register_my_menus(){
   register_nav_menus(array(
     'main-menu'     => __('Main Menu'),
     'footer-left'   => __('Left Footer Menu'),
     'footer-middle' => __('Middle Footer Menu'),
-    'footer-right'  => __('Right Footer Menu')
+    'footer-right'  => __('Right Footer Menu'),
+    'mobile-menu'   => __('Mobile Menu')
   ));
 }
 

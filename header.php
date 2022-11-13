@@ -30,7 +30,7 @@
 
         </div> <!--col-lg-6 logo-container -->
 
-        <div class="col-lg-6 navigation">
+        <div class="col-lg-6 navigation btn-group">
           <nav class="custom-menu-class">
             <?php
               wp_nav_menu(array(

@@ -56,6 +56,9 @@ p, ul, li, label, span {
 font-family: 'Nanum Gothic', sans-serif;
 }
 
+a:hover {
+  color: #687864;
+}
 /*============================
 
 Nav Styling
@@ -166,7 +169,7 @@ text-align: center;
 background-color: #dce4db;
 }
 
-.headding {
+.heading {
   display: none;
 }
 
@@ -194,11 +197,24 @@ button.wpforms-submit,
 button.wpforms-submit:hover,
 .post-navigation-link-previous.wp-block-post-navigation-link a:hover,
 .post-navigation-link-next.wp-block-post-navigation-link a:hover,
-.wp-block-search__button.wp-element-button:hover {
+.wp-block-search__button.wp-element-button:hover,
+#submit:hover {
   color:white;
   box-shadow: inset 20rem 0 0 0 #5085a5;
 }
 
+div#respond {
+    width: 50%;
+}
+
+#comments {
+width: 50%;
+padding: 1rem;
+}
+
+.wp-block-comment-date.has-small-font-size a {
+padding-right: 0.7rem;
+}
 /*============================
 
   Single Styling
@@ -214,8 +230,10 @@ button.wpforms-submit:hover,
 
 ==============================*/
 .post-navigation-link-previous.wp-block-post-navigation-link a,
-.post-navigation-link-next.wp-block-post-navigation-link a {
+.post-navigation-link-next.wp-block-post-navigation-link a,
+#submit {
   color: white;
+  font-family: 'Salsa', cursive;
   background-color: #687864;
   box-shadow: inset 0 0 0 0 #8fc1e3;
   margin: 0 -.25rem;

@@ -17,7 +17,7 @@
   <header>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 logo-container">
+        <div class="col-lg-2 logo-container">
           <?php
               if(get_header_image() == ''){ ?>
                   <h1><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
@@ -28,15 +28,22 @@
                   }
               ?>
 
-        </div> <!--col-lg-6 logo-container -->
+        </div> <!--col-lg-2 logo-container -->
 
-        <div class="col-lg-6 navigation btn-group">
+        <div class="col-lg-6 navigation">
           <nav class="custom-menu-class">
             <?php
               wp_nav_menu(array(
                 'theme_location' => 'main-nav'
               ));
-             ?>
+              ?>
+            </div><!--col-lg-6 nav -->
+
+            <div class="col-lg-3">
+              <?php
+              get_search_form(); ?>
+            </div><!--col-lg-4 search-->
+
            </nav>
          </div> <!--/col-lg-6 navigation -->
       </div> <!--/row-->

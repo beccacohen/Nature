@@ -43,6 +43,7 @@ h1 {
 h2,
 h3 {
   font-size: 2rem;
+  padding-top: 1rem;
 }
 
 p, ul, li, a, label, span {
@@ -121,6 +122,11 @@ nav.custom-menu-class a:hover,
   box-shadow: inset 20rem 0 0 0 #5085a5;
 }
 
+#searchform {
+padding: 1rem;
+margin-top: .5rem;
+}
+
 /*============================
 
 index Styling
@@ -173,6 +179,18 @@ background-color: #dce4db;
   display: none;
 }
 
+div.newsletter {
+  background-color: #dce4db;
+  padding: 2rem;
+  margin: 0;
+  text-align: -webkit-center;
+}
+
+.wp-block-group__inner-container p,
+p {
+  margin: 0;
+}
+
 /*============================
 
   Contact Styling
@@ -198,7 +216,8 @@ button.wpforms-submit:hover,
 .post-navigation-link-previous.wp-block-post-navigation-link a:hover,
 .post-navigation-link-next.wp-block-post-navigation-link a:hover,
 .wp-block-search__button.wp-element-button:hover,
-#submit:hover {
+#submit:hover,
+a.more-link:hover {
   color:white;
   box-shadow: inset 20rem 0 0 0 #5085a5;
 }
@@ -215,6 +234,60 @@ padding: 1rem;
 .wp-block-comment-date.has-small-font-size a {
 padding-right: 0.7rem;
 }
+
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+width: 60%;
+}
+
+div.contact-form {
+margin: 24px auto;
+padding-left: 4rem;
+}
+/*============================
+
+  Search Styling
+
+==============================*/
+#s,
+#searchsubmit {
+border: 0.3rem solid #687864;
+}
+
+#s {
+  padding-left: .4rem;
+  margin: .4rem 0 0 .4rem;
+}
+
+#searchsubmit:hover{
+  color:white;
+  box-shadow: inset 20rem 0 0 0 #5085a5;
+
+}
+
+#searchsubmit {
+  font-family: 'Salsa', cursive;
+  text-decoration: none;
+  background-color: #687864;
+  color: white;
+  box-shadow: inset 0 0 0 0 #8fc1e3;
+  margin: 0 -.25rem;
+  padding: .7rem;
+  transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
+ }
+
+#commentform {
+ padding-bottom: 1rem;
+ }
+
+ #submit {
+   color: white;
+   font-family: 'Salsa', cursive;
+   background-color: #687864;
+   box-shadow: inset 0 0 0 0 #8fc1e3;
+   transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
+   text-decoration: none;
+   padding: .7rem;
+ }
 /*============================
 
   Single Styling
@@ -224,6 +297,9 @@ padding-right: 0.7rem;
   text-align: center;
 }
 
+.post-navigation-link-previous.wp-block-post-navigation-link {
+margin: 1rem 0;
+}
 /*============================
 
   Post nav Styling
@@ -231,7 +307,7 @@ padding-right: 0.7rem;
 ==============================*/
 .post-navigation-link-previous.wp-block-post-navigation-link a,
 .post-navigation-link-next.wp-block-post-navigation-link a,
-#submit {
+a.more-link  {
   color: white;
   font-family: 'Salsa', cursive;
   background-color: #687864;
@@ -250,6 +326,147 @@ padding-right: 0.7rem;
 #crumbs a:hover {
   color:white;
   box-shadow: inset 20rem 0 0 0 #5085a5;
+}
+
+/*============================
+
+  404 Styling
+
+==============================*/
+.error-container {
+  text-align: center;
+  font-weight: 750;
+  line-height: 1;
+  position: relative;
+}
+.error-container > span {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.error-container > span:nth-of-type(1) {
+  color: #dce4db;
+  animation: colordancing 4s infinite;
+}
+.error-container > span:nth-of-type(3) {
+  color: #687864;
+  animation: colordancing2 4s infinite;
+}
+.error-container > span:nth-of-type(2) {
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+}
+.error-container > span:nth-of-type(2):before,
+.error-container > span:nth-of-type(2):after {
+	border-radius: 0%;
+	content:"";
+	position: absolute;
+	top: 0; left: 0;
+	width: inherit; height: inherit;
+  border-radius: 999px;
+	box-shadow: inset 30px 0 0 rgba(104,120,100,1.00),
+				inset 0 30px 0 rgba(80,133,165, 0.4),
+				inset -30px 0 0 rgba(143,193,227, 0.4),
+				inset 0 -30px 0 rgba(220,228,219, 0.4);
+  animation: shadowsdancing 4s infinite;
+}
+.error-container > span:nth-of-type(2):before {
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+			transform: rotate(45deg);
+}
+
+@keyframes shadowsdancing {
+  0% {
+    box-shadow: inset 30px 0 0 rgba(104,120,100, 0.4),
+				inset 0 30px 0 rgba(80,133,165, 0.4),
+				inset -30px 0 0 rgba(143,193,227, 0.4),
+				inset 0 -30px 0 rgba(220,228,219, 0.4);
+  }
+  25% {
+    box-shadow: inset 30px 0 0 rgba(220,228,219, 0.4),
+				inset 0 30px 0 rgba(104,120,100, 0.4),
+				inset -30px 0 0 rgba(80,133,165, 0.4),
+				inset 0 -30px 0 rgba(143,193,227, 0.4);
+  }
+  50% {
+     box-shadow: inset 30px 0 0 rgba(143,193,227, 0.4),
+				inset 0 30px 0 rgba(220,228,219, 0.4),
+				inset -30px 0 0 rgba(104,120,100, 0.4),
+				inset 0 -30px 0 rgba(80,133,165, 0.4);
+  }
+  75% {
+   box-shadow: inset 30px 0 0 rgba(80,133,165, 0.4),
+				inset 0 30px 0 rgba(143,193,227, 0.4),
+				inset -30px 0 0 rgba(220,228,219, 0.4),
+				inset 0 -30px 0 rgba(104,120,100, 0.4);
+  }
+  100% {
+    box-shadow: inset 30px 0 0 rgba(104,120,100, 0.4),
+				inset 0 30px 0 rgba(80,133,165, 0.4),
+				inset -30px 0 0 rgba(143,193,227, 0.4),
+				inset 0 -30px 0 rgba(220,228,219, 0.4);
+  }
+}
+@keyframes colordancing {
+  0% {
+    color: #dce4db;
+  }
+  25% {
+    color: #687864;
+  }
+  50% {
+    color: #5085a5;
+  }
+  75% {
+    color: #8fc1e3;
+  }
+  100% {
+    color: #dce4db;
+  }
+}
+@keyframes colordancing2 {
+  0% {
+    color: #5085a5;
+  }
+  25% {
+    color: #8fc1e3;
+  }
+  50% {
+    color: #dce4db;
+  }
+  75% {
+    color: #687864;
+  }
+  100% {
+    color: #5085a5;
+  }
+}
+
+.zoom-area {
+  max-width: 490px;
+  margin: 30px auto 30px;
+  font-size: 19px;
+  text-align: center;
+}
+.link-container {
+  text-align: center;
+}
+a.more-link {
+  padding: 10px 15px;
+  border-radius: 0;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  text-decoration: none;
+  margin-top: 50px;
+  letter-spacing: 1px;
+}
+
+.error {
+  font-size: 11.2rem;
 }
 /*============================
 

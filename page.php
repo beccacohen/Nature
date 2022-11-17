@@ -6,8 +6,8 @@
         the_post(); ?>
 
         <div class="single-page">
-          <div class="featured-image">
-              <?php the_post_thumbnail(); ?>
+          <div class="featured-image img-page-single">
+              <?php the_post_thumbnail('thumbnail'); ?>
           </div><!--featured-image-->
           <div class="text-container">
             <h2 class="heading"><?php the_title();?></a></h2>
